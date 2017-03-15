@@ -6,9 +6,10 @@ $(document).ready(function(){
       menuElem.on("click", function(e) {
         var element = $(this).attr("href");
         var elementOffset = $(element).offset();
-      $("body", "html").animate({scrollTop: elementOffset.top}, 1500);
-
+      $("body, html").animate({scrollTop: elementOffset.top}, 1500);
 });
+
+
 
         // offer-bear animation:  
    $(".offer-bear-animation").on("mouseenter", function(){    
