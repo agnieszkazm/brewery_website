@@ -225,7 +225,8 @@ nav li:hover ul {
 .fa-chevron-down {
   font-size: 60px;
   color: #FFFFFF;
-  margin-top: 60vh; }
+  margin-top: 60vh;
+  cursor: pointer; }
 
 .offer {
   background-color: #F5F5F5;
@@ -439,7 +440,7 @@ footer h2:after {
   position: absolute;
   bottom: 0;
   left: 0;
-  z-index: 5; }
+  z-index: 2; }
 
 .cookies p {
   background-color: rgba(37, 39, 38, 0.8);
@@ -452,6 +453,19 @@ footer h2:after {
   background-color: #e5bc29;
   border: none;
   padding: 10px; }
+
+.arrow-footer {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  color: #000;
+  font-size: 30px;
+  border: 1px solid #000;
+  transform: rotate(270deg);
+  background-color: #e5bc29;
+  cursor: pointer;
+  padding: 15px;
+  z-index: 3; }
 
 @media(min-width: 768px) and (max-width: 1199px) {
   .col-m-1 {
