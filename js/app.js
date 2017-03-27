@@ -43,16 +43,23 @@ $(document).ready(function() {
         else $('.arrow-footer').fadeOut();
     });
     //counter
-    $('.count').each(function() {
-        $(this).prop('Counter', 0).animate({
-            Counter: $(this).text()
-        }, {
-            duration: 4000,
-            step: function(now) {
-                $(this).text(Math.ceil(now));
-            }
-        });
+    $(window).scroll(function() {
+        var count_offset = ($(".count").offset().top);
+        if ($(document).scrollTop() > count_offset) {
+            //console.log($(".count").offset().top); 
+            $('.count').each(function() {
+                $(this).prop('Counter', 0).animate({
+                    Counter: $(this).text()
+                }, {
+                    duration: 4000,
+                    step: function(now) {
+                        $(this).text(Math.ceil(now));
+                    }
+                });
+            });
+        }
     });
+
     //cookies
     var lastP = $('footer').find('p:last');
     $('button').click(function() {
