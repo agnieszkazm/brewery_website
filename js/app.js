@@ -43,10 +43,14 @@ $(document).ready(function() {
         else $('.arrow-footer').fadeOut();
     });
     //counter
+    
+var counterInitialized = false;
     $(window).scroll(function() {
         var count_offset = ($(".count").offset().top);
-        if ($(document).scrollTop() > count_offset) {
+        if (!counterInitialized && $(document).scrollTop() > count_offset) {
             //console.log($(".count").offset().top); 
+             counterInitialized = true;
+
             $('.count').each(function() {
                 $(this).prop('Counter', 0).animate({
                     Counter: $(this).text()
