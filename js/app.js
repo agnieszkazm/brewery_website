@@ -46,9 +46,9 @@ $(document).ready(function() {
     
 var counterInitialized = false;
     $(window).scroll(function() {
-        var count_offset = ($(".count").offset().top);
+        var count_offset = ($(".staff").offset().top);
         if (!counterInitialized && $(document).scrollTop() > count_offset) {
-            //console.log($(".count").offset().top); 
+            //console.log($(".numbers").offset().top); 
              counterInitialized = true;
 
             $('.count').each(function() {

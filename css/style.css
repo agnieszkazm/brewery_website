@@ -317,7 +317,8 @@ nav li:hover ul {
 
 .staff {
   padding-top: 65px;
-  padding-bottom: 65px; }
+  padding-bottom: 65px;
+  background-color: #F5F5F5; }
 
 .person {
   border-radius: 50%;
