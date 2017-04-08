@@ -199,7 +199,7 @@ nav li:hover ul {
  * 		+transition(2.0s) */
 .hero {
   background: url("../img/hero.jpg");
-  height: 600px;
+  height: 100vh;
   width: 100%;
   background-attachment: fixed;
   background-size: cover;
@@ -317,8 +317,7 @@ nav li:hover ul {
 
 .staff {
   padding-top: 65px;
-  padding-bottom: 65px;
-  background-color: #F5F5F5; }
+  padding-bottom: 65px; }
 
 .person {
   border-radius: 50%;
@@ -363,7 +362,6 @@ nav li:hover ul {
 
 .topic {
   margin-top: 65px;
-  background-color: #F5F5F5;
   position: relative;
   background-attachment: fixed; }
 
@@ -394,7 +392,8 @@ article .col-4 {
 .numbers {
   text-align: center;
   margin-top: 65px;
-  margin-bottom: 65px; }
+  margin-bottom: 65px;
+  background-color: #F5F5F5; }
 
 .numbers h3 {
   color: #e5bc29;
@@ -590,11 +589,12 @@ footer h2:after {
   .slogan {
     margin-top: 40vh;
     z-index: 1;
-    position: relative; }
+    position: relative;
+    width: 100%; }
 
   .fa-chevron-down {
-    font-size: 60px;
-    color: #FFFFFF;
+    margin-left: 0;
+    margin-right: 0;
     margin-top: 10vh; }
 
   .person {

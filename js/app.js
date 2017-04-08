@@ -12,13 +12,13 @@ $(document).ready(function() {
     // offer-bear animation:  
     $(".offer-bear-animation").on("mouseenter", function() {
         //$(this).find("p").animate({opacity:1},1500);
-        $(".offer-animate-1").delay(800).animate({
+        $(".offer-animate-1").delay(200).animate({
             opacity: 1
         }, 1500)
-        $(".offer-animate-2").delay(1600).animate({
+        $(".offer-animate-2").delay(700).animate({
             opacity: 1
         }, 1500)
-        $(".offer-animate-3").delay(3000).animate({
+        $(".offer-animate-3").delay(1300).animate({
             opacity: 1
         }, 1500)
     });
